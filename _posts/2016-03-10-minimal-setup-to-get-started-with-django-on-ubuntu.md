@@ -59,7 +59,7 @@ The folder structure inside the **/projects/** direcotry should look like this.
 Incase you already created a folder inside the directory, you can also start the project without creating an additional folder inside it. 
 
 ~~~ bash
-django-admin startproject projectname . # Notice the trailing **.**
+django-admin startproject projectname . # Notice the trailing "dot"
 ~~~
 
 There are two files that you need to know about here: 
