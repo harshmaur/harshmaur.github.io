@@ -3,6 +3,7 @@
 title:            Crafted By Harsh
 locale:           en_US
 url:              http://www.craftedbyharsh.com
+# url:              http://localhost:4000
 
 
 # Jekyll configuration
