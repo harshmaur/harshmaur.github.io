@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Crafted By Harsh
 locale:           en_US
-url:
+url:              http://www.craftedbyharsh.com
 
 
 # Jekyll configuration
@@ -41,25 +41,25 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
+  name: Harsh Maur
+  avatar: harsh.jpg
+  bio: "I have been programming since 5 years on full stack technologies, I would be glad to hear about your problems and spend time improving your businesses."
+  email: harshmaur@gmail.com
   disqus-shortname:
-  twitter: #username
-  facebook: #username
+  twitter: harsh_maur
+  facebook: harshmaur
   google:
-    plus: #username
-    analytics:
+    plus: harshmaur
+    analytics: UA-37684395-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  github: harshmaur
+  stackoverflow: 5347513/harsh-maur   #from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: harshmaur
   xing: #username
-  instagram: #username
+  instagram: harshmaur
   lastfm: #username
   tumblr: #username
   pinterest: #username
