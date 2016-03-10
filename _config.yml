@@ -2,7 +2,7 @@
 
 title:            Crafted By Harsh
 locale:           en_US
-url:              http://www.craftedbyharsh.com
+url:              http://localhost:4000
 
 
 # Jekyll configuration
@@ -45,7 +45,7 @@ owner:
   avatar: harsh.jpg
   bio: "I have been programming since 5 years on full stack technologies, I would be glad to hear about your problems and spend time improving your businesses."
   email: harshmaur@gmail.com
-  disqus-shortname:
+  disqus-shortname: craftedbyharsh
   twitter: harsh_maur
   facebook: harshmaur
   google:

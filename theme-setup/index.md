@@ -13,6 +13,7 @@ image:
 
 ## Installation
 
+
 Minimal Mistakes now requires [Jekyll](http://jekyllrb.com/) 3.0. Make sure to run `bundle update` if you aren't on the latest version to update all gem dependencies.
 
 If you are creating a new Jekyll site using Minimal Mistakes follow these steps:
