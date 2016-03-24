@@ -103,11 +103,99 @@ If you receive the output like above, that means you were able to run the server
 
 Let's create a django app inside our project where we will code our first hello world! program and look into the views and the url routings. 
 
+~~~ bash
+./manage.py startapp hello
+~~~
 
-**--Work In progress--**
+Here, "hello" is the app name, however it can be anything you like. 
+
+The Structure of the whole project should now looks something like this.
+
+~~~
+.
+`-- projectname
+    |-- db.sqlite3
+    |-- hello
+    |   |-- admin.py
+    |   |-- apps.py
+    |   |-- __init__.py
+    |   |-- migrations
+    |   |   `-- __init__.py
+    |   |-- models.py
+    |   |-- tests.py
+    |   `-- views.py
+    |-- manage.py
+    `-- projectname
+        |-- __init__.py
+        |-- __init__.pyc
+        |-- settings.py
+        |-- settings.pyc
+        |-- urls.py
+        |-- urls.pyc
+        |-- wsgi.py
+        `-- wsgi.pyc
+~~~
+
+You will notice quite a lot of new files now. The most important one to look for is views.py inside "hello" directory. We will also create urls.py inside the directory to map a function inside the view to a url which can be then rendered. 
+
+Let's open up views.py and enter the following code. 
+
+~~~ python
+from django.shortcuts import render
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("Hello, world!")
+~~~
+
+Now we are going to map "index" function with a url
+
+~~~ bash
+touch urls.py # this should be created inside "hello" directory
+~~~
+
+Open urls.py
+
+~~~ python
+from django.conf.urls import url
+
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+]
+~~~
+
+Next we have to include the hello.urls inside the root projectname/urls.py file.
+
+~~~ bash
+cd ..
+cd projectname
+vim urls.py # I use vim as my text editor, however you can use any editor of your choice.
+~~~
+
+In the *django.conf.urls* add another import of *include*
+
+Then inside urlpatterns, include your hello.urls like this. 
+
+~~~ python
+urlpatterns = [
+    url(r'^', include('hello.urls')),
+    url(r'^admin/', admin.site.urls),
+]
+~~~
+
+Start your server if its not already running by *./manage.py runserver*
+
+If you visit http://localhost:8000, you will see your hello world message coming up. 
+
+So, we are now done with the minimal setup with django. 
 
 
 ###What's Next?
 
-I recommend going through [Django Polls](https://docs.djangoproject.com/en/1.9/) and [Rango](http://www.tangowithdjango.com) to strengthen the basics of Django. The latter being a bit *outdated*, so a word of caution when following through the tutorial, however most of the things should work with the latest django versions. 
+I recommend going through [Django Polls](https://docs.djangoproject.com/en/1.9/) and [Rango](http://www.tangowithdjango.com) to strengthen the basics of Django. The latter being a bit *outdated*, so a word of caution when following through the tutorial, however most of the things should work with the latest django versions. Django documentation is very well documented and most of the times all you have to do is open it up and solve your problems. 
+
+If you have any questions or you cannot get it to work, feel free to ask questions below. I would be eager to listen to you. 
 
