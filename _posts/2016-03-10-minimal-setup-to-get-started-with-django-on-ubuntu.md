@@ -193,7 +193,7 @@ If you visit http://localhost:8000, you will see your hello world message coming
 So, we are now done with the minimal setup with django. 
 
 
-###What's Next?
+### What's Next?
 
 I recommend going through [Django Polls](https://docs.djangoproject.com/en/1.9/) and [Rango](http://www.tangowithdjango.com) to strengthen the basics of Django. The latter being a bit *outdated*, so a word of caution when following through the tutorial, however most of the things should work with the latest django versions. Django documentation is very well documented and most of the times all you have to do is open it up and solve your problems. 
 
