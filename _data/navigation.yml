@@ -1,5 +1,4 @@
-# Site navigation links
-
-- title: All Posts
-  url: /posts/
-
+# main links links
+main:
+  - title: All Posts
+    url: /posts/

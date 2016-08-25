@@ -1,77 +1,236 @@
-# Site wide configuration
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
 
-title:            Crafted By Harsh
-locale:           en_US
-url:              http://www.craftedbyharsh.com
-# url:              http://localhost:4000
+# Site Settings
+locale                   : "en_US"
+title                    : "Crafted By Harsh"
+title_separator          : "-"
+name                     : "Crafted By Harsh"
+description              : "An amazing website."
+# url                      : "http://www.craftedbyharsh.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://localhost:4000" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "harshmaur/harshmaur.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : true # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  disqus:
+    shortname            : "craftedbyharsh" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : # "master", "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+
+# SEO Related
+google_site_verification : "N0yMJ0cHTYnlX7ANdXocOBOjWfGxXTQDEsPy_HWwQ3A"
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               : "harsh_maur"
+facebook:
+  username               : "harshmaur"
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links:
+    - "https://facebook.com/harshmaur"
+    - "https://twitter.com/harsh_maur"
+    - "https://www.linkedin.com/in/harshmaur"
+    - "http://plus.google.com/+harshmaur"
+    - "http://instagram.com/harshmaur"
+    - "http://github.com/harshmaur"
+    - "http://stackoverflow.com/users/5347513/harsh-maur"
+
+# Analytics
+analytics:
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  google-universal:
+    tracking_id          : "UA-37684395-1"
 
 
-# Jekyll configuration
+# Site Author
+author:
+  name             : "Harsh Maur"
+  avatar           : "harsh.jpg"
+  bio              : "I have been programming for 6 years on full stack technologies, I would be glad to hear about your problems and spend time improving your businesses."
+  location         : "New Delhi, India"
+  email            : "harshmaur@gmail.com"
+  uri              : "http://www.craftedbyharsh.com"
+  bitbucket        : "harshmaur"
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         : "harshmaur"
+  foursquare       :
+  github           : "harshmaur"
+  google_plus      : "harshmaur"
+  keybase          :
+  instagram        : "harshmaur"
+  lastfm           :
+  linkedin         : "harshmaur"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : "http://stackoverflow.com/users/5347513/harsh-maur" # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          : "harsh_maur"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
 
-permalink:   /:categories/:title/
-markdown:    kramdown
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
 highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-  - jekyll-gist
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
+
+# Markdown Processing
 kramdown:
+  input: GFM
+  hard_wrap: false
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
 
-# Octopress
-
-# Default extensions
-post_ext: md
-page_ext: md
-
-# Found in _templates/
-post_layout: post
-page_layout: page
-
-# Format titles with titlecase?
-titlecase: true
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
-# Site owner
-owner:
-  name: Harsh Maur
-  avatar: harsh.jpg
-  bio: "I have been programming for 6 years on full stack technologies, I would be glad to hear about your problems and spend time improving your businesses."
-  email: harshmaur@gmail.com
-  disqus-shortname: craftedbyharsh
-  twitter: harsh_maur
-  facebook: harshmaur
-  google:
-    plus: harshmaur
-    analytics: UA-37684395-1
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: harshmaur
-  stackoverflow: 5347513/harsh-maur   #from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: harshmaur
-  xing: #username
-  instagram: harshmaur
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
