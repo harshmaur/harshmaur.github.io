@@ -8,8 +8,6 @@ tags: [django, ubuntu]
 image:
   feature:
 date: 2016-03-10T12:58:00+05:30
-comments: true
-share: true
 ---
 
 Installing and setting up Django can get very intimidating if you are just starting out with the framework.

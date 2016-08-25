@@ -1,33 +1,9 @@
 # Authors
 
 harshmaur:
-  name: Harsh Maur
-  avatar: harsh.jpg
+  name: "Harsh Maur"
+  uri: "http://www.comparemunafa.com"
+  email: "harshmaur@gmail.com"
   bio: "I have been programming since 5 years on full stack technologies, I would be glad to hear about your problems and spend time improving your businesses."
-  email: harshmaur@gmail.com
-  disqus-shortname:
-  twitter: harsh_maur
-  facebook: harshmaur
-  google:
-    plus: harshmaur
-    analytics: UA-37684395-1
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: harshmaur
-  stackoverflow: 5347513/harsh-maur   #from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: harshmaur
-  xing: #username
-  instagram: harshmaur
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
+  avatar: "harsh.jpg"
+  twitter: "harsh_maur"
