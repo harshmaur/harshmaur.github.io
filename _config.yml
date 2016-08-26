@@ -17,7 +17,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "harshmaur/harshmaur.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 100
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -194,7 +194,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

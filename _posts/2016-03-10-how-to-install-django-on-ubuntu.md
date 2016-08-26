@@ -1,10 +1,10 @@
 ---
 layout: single
-title: Minimal Setup to Get Started With Django on Ubuntu
+title: How to Install Django on Ubuntu 14.04
 modified:
-categories:
+categories: "django"
 excerpt: Getting started with Django on Ubuntu 14.04 with minimal setup and some useful tips and tricks to work your way around the project.
-tags: [django, ubuntu]
+tags: [django, ubuntu, rango]
 image:
   feature:
 date: 2016-03-10T12:58:00+05:30
