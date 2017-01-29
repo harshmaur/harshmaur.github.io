@@ -1,5 +1,7 @@
 # [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/harshmaur/harshmaur.github.io.svg)](https://greenkeeper.io/)
+
 [![GitHub release](https://img.shields.io/github/release/mmistakes/minimal-mistakes.svg)](https://github.com/mmistakes/minimal-mistakes/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
